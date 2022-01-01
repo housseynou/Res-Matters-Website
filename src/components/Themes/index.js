@@ -1,14 +1,15 @@
 import React from 'react';
 //import Video from '../../videos/matter.mp4';
-import energy from '../../images/energy.jpg';
-import mine from '../../images/mine.jpg';
-import { EnergySection, MineEnergyContainer, MineSection, ThemeBg, TextUl, TextLi, ThemesContainer, ThemeSection, Img } from './ThemeElements';
+import energy from '../../images/lightbulb.png';
+import mine from '../../images/pickaxe.png';
+import back from '../../images/backg.jpg'
+import { EnergySection, MineEnergyContainer, MineSection, ThemeBg, TextUl, TextLi, ThemesContainer, ThemeSection, Img, BackgImg } from './ThemeElements';
 
 function Themes() {
     return (
         <ThemesContainer id="themes">
             <ThemeBg>
-                
+                <BackgImg src={back} alt="background" />
             </ThemeBg>
             
             <ThemeSection>

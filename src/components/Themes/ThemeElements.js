@@ -27,15 +27,21 @@ export const ThemeBg = styled.div`
   overflow: hidden;
 `
 
-
+export const BackgImg = styled.img`
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+`
+/* BackgImg: url('../../images/image.jpg') center center/cover no-repeat */
 
 export const TextUl = styled.ul`
     color: #395E70;
     font-size: 24px;
     position: relative;
     padding: 0 30px 0 30px;
-    margin-top: 30px;
-    margin-botom: 100px;
+    margin-top: 150px;
+  
     max-width: 800px;
   
     @media screen and (max-width: 900px) {
@@ -78,6 +84,7 @@ export const MineEnergyContainer = styled.div`
     justify-content: center;
     align-content: center;
     gap: 40px;
+    margin-top: 30px;
     
     @media screen and (max-width: 900px) {
         gap: 30px;
@@ -87,15 +94,16 @@ export const MineEnergyContainer = styled.div`
     }
     @media screen and (max-width: 584px) {
         gap: 10px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        
     }
 `
+/* In @media screen flex-direction: column;
+        justify-content: center;
+        align-items: center;*/
 
 export const EnergySection = styled.div`
-    width: 350px;
-    height: 350px;
+    width: 280px;
+    height: 280px;
     background: linear-gradient(to top, rgba(255,182,2,0), rgba(255,182,2,1));
     border-radius: 0 30px 0 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
@@ -105,22 +113,22 @@ export const EnergySection = styled.div`
     cursor: pointer;
 
     @media screen and (max-width: 900px) {
-        width: 310px;
-        height: 310px;  
+        width: 270px;
+        height: 270px;  
     }
     @media screen and (max-width: 768px) {
-        width: 260px;
-        height: 260px;
+        width: 210px;
+        height: 210px;
     }
     @media screen and (max-width: 584px) {
-        width: 190px;
-        height: 190px;
+        width: 140px;
+        height: 140px;
     }
 `;
 
 export const MineSection = styled.div`
-    width: 350px;
-    height: 350px;
+    width: 280px;
+    height: 280px;
     background: linear-gradient(to top, rgba(0,170,222,0), rgba(0,170,222,1));;
     border-radius: 0 30px 0 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
@@ -130,33 +138,33 @@ export const MineSection = styled.div`
     cursor: pointer;
 
     @media screen and (max-width: 900px) {
-        width: 310px;
-        height: 310px;  
+        width: 270px;
+        height: 270px;  
     }
     @media screen and (max-width: 768px) {
-        width: 260px;
-        height: 260px;
+        width: 210px;
+        height: 210px;
     }
     @media screen and (max-width: 584px) {
-        width: 190px;
-        height: 190px;
+        width: 140px;
+        height: 140px;
     }
 `;
 
 export const Img = styled.img`
-    width: 320px;
-    height: 320px;
+    width: 260px;
+    height: 260px;
 
     @media screen and (max-width: 900px) {
-        width: 280px;
-        height: 280px;  
+        width: 250px;
+        height: 250px;  
     }
     @media screen and (max-width: 768px) {
-        width: 230px;
-        height: 230px;
+        width: 190px;
+        height: 190px;
     }
     @media screen and (max-width: 584px) {
-        width: 170px;
-        height: 170px;
+        width: 120px;
+        height: 120px;
     }
 `

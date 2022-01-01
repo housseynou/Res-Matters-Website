@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
 }
@@ -12,8 +17,8 @@
 }
 
 .image {
-  width: 1000px;
-  height: 600px;
+  width: 900px;
+  height: 500px;
   border-radius: 10px;
 }
 
