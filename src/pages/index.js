@@ -5,7 +5,8 @@ import { SliderData } from '../components/Plateformes/Images';
 import Sidebar from '../components/Sidebar';
 import Publications from '../components/Publications';
 import Themes from '../components/Themes';
-import Footer from '../components/Footer'
+import Footer from '../components/Footer';
+import Apropos from '../components/Apropos';
 
 
 function Home() {
@@ -22,6 +23,7 @@ function Home() {
           <Themes /> 
           <Plateform slides={SliderData} /> 
           <Publications/>
+          <Apropos />
           <Footer/>
         </>
     )

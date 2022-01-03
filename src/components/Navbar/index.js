@@ -43,11 +43,9 @@ const Navbar = ({ toggle }) => {
                           <NavLinks to="publications" spy={true} smooth={true} duration={500}>Publications</NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to="ÀPropos" spy={true} smooth={true} duration={500}>À Propos</NavLinks>
+                          <NavLinks to="apropos" spy={true} smooth={true} duration={500}>À Propos</NavLinks>
                       </NavItem>
-                      <NavItem>
-                          <NavLinks to="involved">Get Involved</NavLinks>
-                      </NavItem>
+                      
                   </NavMenu>
               </NavbarContainer>
           </Nav>

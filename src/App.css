@@ -13,6 +13,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: linear-gradient(to top, rgba(151,169,35,0), rgba(151,169,35,1));
   /*background: linear-gradient(to top, rgba(255,187,7,0), rgba(255,187,7,1));*/
 }
 
