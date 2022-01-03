@@ -1,57 +1,59 @@
 import React from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
-import "./public.css";
-//import { PostImg } from './PostData';
+import PostData from './PostData';
+import img1 from '../../images/money.jpg';
+import img2 from '../../images/energy.jpg';
+import img3 from '../../images/mine.jpg';
+import img4 from '../../images/eolien.jpg';
+import img5 from '../../images/exploit.jpg';
+import { Post, PostTitle, PostContainer, PostWrapper, PostItems } from './PublicElmts';
 
-
-
-function Slider ()  {
-    const baseUrl = "http://react-responsive-carousel.js.org/assets/";
-    const datas = [
-        {
-            id: 1,
-            image: `${baseUrl}1.jpeg`,
-            title: "Titre du Post",
-            text: `Un descriptif du post. Un texte bien developpé qui permet à chacun de lire et comprendre le post. Si tu vois ce que je veux dire`
-        },
-        {
-            id: 2,
-            image: `${baseUrl}2.jpeg`,
-            title: "Titre du Post",
-            text: `Un descriptif du post. Un texte bien developpé qui permet à chacun de lire et comprendre le post. Si tu vois ce que je veux dire`
-        },
-        {
-            id: 3,
-            image: `${baseUrl}3.jpeg`,
-            title: "Titre du Post",
-            text: `Un descriptif du post. Un texte bien developpé qui permet à chacun de lire et comprendre le post. Si tu vois ce que je veux dire`
-        },
-        {
-            id: 4,
-            image: `${baseUrl}4.jpeg`,
-            title: "Titre du Post",
-            text: `Un descriptif du post. Un texte bien developpé qui permet à chacun de lire et comprendre le post. Si tu vois ce que je veux dire`
-        }
-    ]
-
-    
-  return (
-      <div className="pubContainer" id='publications'>
-        <Carousel >
-            {datas.map(slide => (
-                <div key={slide.id}>
-                    <img src={slide.image} alt="" />
-                    <div className="overlay">
-                        <h2 className="overlay_title">{slide.title}</h2>
-                        <p className="overlay_text">{slide.text}</p>
-                    </div>
-                </div>
-            ))}
-        </Carousel> 
-    </div> 
+const Publications = () => {
+    return (
+        <>
+            <Post id='publications'>
+                
+                <PostContainer>
+                <PostTitle>Les Dernières Publications</PostTitle>
+                    <PostWrapper>
+                    <PostItems>
+                        <PostData
+                        src={img1}
+                        text='$530 millions portés disparus - Sur les traces des avances fiscales de la Gécamines'
+                        label='Communiqué'
+                        path='/'
+                        />
+                        <PostData
+                        src={img2}
+                        text='Electrification de la RDC: A la recherche de pistes de solution'
+                        label='Rapport'
+                        path='/'
+                        />
+                    </PostItems>
+                    <PostItems>
+                        <PostData
+                        src={img3}
+                        text='Redevance minière destinée au ETD: un casse-tête à résoudre'
+                        label='Rapport'
+                        path='/services'
+                        />
+                        <PostData
+                        src={img4}
+                        text='Electrification de la RDC: A la recherche de pistes de solution'
+                        label='Publication'
+                        path='/products'
+                        />
+                        <PostData
+                        src={img5}
+                        text='$530 millions portés disparus - Sur les traces des avances fiscales de la Gécamines'
+                        label='Presse'
+                        path='/sign-up'
+                        />
+                    </PostItems>
+                    </PostWrapper>
+                </PostContainer>
+            </Post>
+        </>
     )
 }
 
-
-export default Slider;
+export default Publications
