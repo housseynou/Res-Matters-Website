@@ -12,8 +12,8 @@ function Sidebar({ isOpen, toggle}) {
                    <SidebarLink to="themes" onClick={toggle}>Thèmes</SidebarLink>
                    <SidebarLink to="plateformes" onClick={toggle}>Plateformes</SidebarLink>
                    <SidebarLink to="publications" onClick={toggle}>Publications</SidebarLink>
-                   <SidebarLink to="lequipe" onClick={toggle}>L'Equipe</SidebarLink>
-                   <SidebarLink to="involved" onClick={toggle}>Get Involved</SidebarLink>
+                   <SidebarLink to="apropos" onClick={toggle}>A Propos</SidebarLink>
+                   
                </SidebarMenu>
            </SidebarWrapper> 
 
