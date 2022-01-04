@@ -5,7 +5,8 @@ import makuta from '../../images/Makuta.png';
 export const SliderData = [
     {
       image:
-        supply
+        supply,
+       
     },
     {
       image:

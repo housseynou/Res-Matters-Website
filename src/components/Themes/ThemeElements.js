@@ -49,17 +49,26 @@ export const TextUl = styled.ul`
     }
     @media screen and (max-width: 768px) {
         font-size: 20px;
+        max-width: 450px;
+        text-align: center;
         
     }
     @media screen and (max-width: 584px) {
         font-size: 18px;
+        max-width: 400px
     }
+`
+
+export const Strong = styled.strong`
+    color: #0585AC;
+     
 `
 
 export const TextLi = styled.li`
     font-size: 24px;
     margin-left: 40px;
     text-align: center;
+    margin-top: 10px;
 
     @media screen and (max-width: 900px) {
         font-size: 22px;  

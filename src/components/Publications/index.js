@@ -20,13 +20,13 @@ const Publications = () => {
                         src={img1}
                         text='$530 millions portés disparus - Sur les traces des avances fiscales de la Gécamines'
                         label='Communiqué'
-                        path='/'
+                        path='/posts'
                         />
                         <PostData
                         src={img2}
                         text='Electrification de la RDC: A la recherche de pistes de solution'
                         label='Rapport'
-                        path='/'
+                        path='/posts'
                         />
                     </PostItems>
                     <PostItems>
@@ -34,19 +34,19 @@ const Publications = () => {
                         src={img3}
                         text='Redevance minière destinée au ETD: un casse-tête à résoudre'
                         label='Rapport'
-                        path='/services'
+                        path='/posts'
                         />
                         <PostData
                         src={img4}
                         text='Electrification de la RDC: A la recherche de pistes de solution'
                         label='Publication'
-                        path='/products'
+                        path='/posts'
                         />
                         <PostData
                         src={img5}
                         text='$530 millions portés disparus - Sur les traces des avances fiscales de la Gécamines'
                         label='Presse'
-                        path='/sign-up'
+                        path='/posts'
                         />
                     </PostItems>
                     </PostWrapper>
