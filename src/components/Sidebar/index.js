@@ -1,4 +1,5 @@
 import React from 'react'
+import Tour from './walkthrough'
 import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink} from './SidebarElements'
 
 function Sidebar({ isOpen, toggle}) {
@@ -15,6 +16,7 @@ function Sidebar({ isOpen, toggle}) {
                    <SidebarLink to="apropos" onClick={toggle}>A Propos</SidebarLink>
                    
                </SidebarMenu>
+               <Tour />
            </SidebarWrapper> 
 
         </SidebarContainer>

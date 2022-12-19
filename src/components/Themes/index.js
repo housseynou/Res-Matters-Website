@@ -1,4 +1,5 @@
 import React from 'react';
+import Tour from './walkthrough';
 //import Video from '../../videos/matter.mp4';
 import energy from '../../images/lightbulb.png';
 import mine from '../../images/pickaxe.png';
@@ -25,6 +26,7 @@ function Themes() {
                     <EnergySection><Img to='energy' src={energy} alt="energy" /></EnergySection>
                     <MineSection><Img to='mine' src={mine} alt="mine" /></MineSection>
                 </MineEnergyContainer>
+                <Tour />
             </ThemeSection>
         </ThemesContainer>
     );
